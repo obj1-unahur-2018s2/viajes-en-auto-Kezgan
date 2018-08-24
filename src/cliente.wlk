@@ -15,3 +15,9 @@ object teresa {
 		return (22*kms)
 	}
 }
+
+object melina {
+	method precioPorKm(kms) {
+		
+	}
+}
