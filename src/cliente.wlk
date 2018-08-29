@@ -1,23 +1,29 @@
 object ludmila {
-	method precioPorKm(kms) {
-		return (18*kms)
+	method precioPorKm() {
+		return (18)
 	}
 }
 
 object anaMaria {
-	method precioPorKm(kms) {
-		return (30*kms)
+	method precioPorKm() {
+		return (30)
 	}
 }
 
 object teresa {
-	method precioPorKm(kms) {
-		return (22*kms)
+	method precioPorKm() {
+		return (22)
 	}
 }
 
 object melina {
-	method precioPorKm(kms) {
-		
+	var _cliente = null
+	
+	method trabajaPara(cliente) {
+		_cliente = cliente
+	}
+	
+	method precioPorKm() {
+		return _cliente.precioPorKm() - 3
 	}
 }
